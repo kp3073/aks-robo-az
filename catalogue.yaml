@@ -5,10 +5,10 @@ metadata:
   name: catalogue
 data:
   "APP_GIT_URL": "https://github.com/roboshop-devops-project-v3/catalogue"
-  "DB_HOST": "mongodb-dev.azdevopsb82.online"
+  "DB_HOST": "mongodb-dev.cloudaws.shop"
   "DB_TYPE": "mongo"
   "MONGO": "true"
-  "MONGO_URL": "mongodb://mongodb-dev.azdevopsb82.online:27017/catalogue"
+  "MONGO_URL": "mongodb://mongodb-dev.cloudaws.shop:27017/catalogue"
   "SCHEMA_FILE": "db/master-data.js"
 ---
 apiVersion: apps/v1
