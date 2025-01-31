@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: configMap
 metadata:
-  name: frontend-config
+  name: frontend
   labels:
     app: frontend
 data:
