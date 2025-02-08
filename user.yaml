@@ -1,12 +1,26 @@
----
-apiVersion: v1
-kind: ConfigMap
+#---
+#apiVersion: v1
+#kind: ConfigMap
+#metadata:
+#  name: user
+#data:
+#  "MONGO": "true"
+#  "MONGO_URL": "mongodb://mongodb-dev.cloudaws.shop:27017/users"
+#  "REDIS_URL": "redis://redis-dev.cloudaws.shop:6379"
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
 metadata:
   name: user
-data:
-  "MONGO": "true"
-  "MONGO_URL": "mongodb://mongodb-dev.cloudaws.shop:27017/users"
-  "REDIS_URL": "redis://redis-dev.cloudaws.shop:6379"
+spec:
+  refreshInterval: "5s"
+  secretStoreRef:
+    name: "vault-backend"
+    kind: SecretStore
+    target:
+      name: user
+    dataFrom:
+    - extract:
+        key: user
 ---
 apiVersion: apps/v1
 kind: Deployment
