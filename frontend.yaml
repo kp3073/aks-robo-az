@@ -16,7 +16,7 @@
 #  SHIPPING_PORT: "8080"
 #  PAYMENT_HOST: payment
 #  PAYMENT_PORT: "8080"
-apiVersion: external-secrets.io/v1
+apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
   name: frontend

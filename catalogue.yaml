@@ -10,7 +10,7 @@
 #  "MONGO": "true"
 #  "MONGO_URL": "mongodb://mongodb-dev.cloudaws.shop:27017/catalogue"
 #  "SCHEMA_FILE": "db/master-data.js"
-apiVersion: external-secrets.io/v1
+apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
   name: catalogue

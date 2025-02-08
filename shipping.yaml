@@ -10,7 +10,7 @@
 #  "DB_PASS": "RoboShop@1"
 #  "DB_TYPE": "mysql"
 #  "DB_USER": "root"
-apiVersion: external-secrets.io/v1
+apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
   name: shipping

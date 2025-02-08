@@ -7,7 +7,7 @@
 #  "MONGO": "true"
 #  "MONGO_URL": "mongodb://mongodb-dev.cloudaws.shop:27017/users"
 #  "REDIS_URL": "redis://redis-dev.cloudaws.shop:6379"
-apiVersion: external-secrets.io/v1
+apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
   name: user
