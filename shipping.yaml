@@ -17,13 +17,13 @@ metadata:
 spec:
   refreshInterval: "5s"
   secretStoreRef:
-    name: "vault-backend"
+    name: vault-backend
     kind: SecretStore
-    target:
-      name: shipping
-    dataFrom:
-    - extract:
-        key: shipping
+  target:
+    name: shipping
+  dataFrom:
+  - extract:
+      key: shipping
 ---
 apiVersion: apps/v1
 kind: Deployment
