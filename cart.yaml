@@ -17,11 +17,11 @@ spec:
   secretStoreRef:
     name: "vault-backend"
     kind: SecretStore
-    target:
-        name: cart
-    dataFrom:
-    - extract:
-        key: cart    
+  target:
+    name: cart
+  dataFrom:
+  - extract:
+      key: cart   
 ---
 apiVersion: apps/v1
 kind: Deployment
