@@ -48,7 +48,7 @@ spec:
         ports:
         - containerPort: 8080
         envFrom:
-        - configMapRef:
+        - secretRef:
             name: payment
 ---
 apiVersion: v1

@@ -47,7 +47,7 @@ spec:
         ports:
         - containerPort: 8080
         envFrom:
-        - configMapRef:
+        - secretRef:
             name: catalogue
 ---
 apiVersion: v1
