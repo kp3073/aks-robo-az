@@ -19,7 +19,7 @@ spec:
   refreshInterval: "5s"
   secretStoreRef:
     name: vault-backend
-    kind: SecretStore
+    kind: SecretStore.yaml
   target:
     name: payment
   dataFrom:
